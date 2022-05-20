@@ -57,7 +57,6 @@ class LoginController extends Controller
 
         }
         $request->session()->flash('error', 'Email or Password incorrect');
-        // $request->session()->flash('status', 'Task was successful!');
         return back()->withInput();
     }
     /**
